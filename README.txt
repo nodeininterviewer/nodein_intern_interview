@@ -4,6 +4,14 @@ To get started you need to be on a Linux system preferably Ubuntu. The code requ
 
 sudo apt-get install python-numpy python-matplotlib
 
+git is also required to download and submit your solution to the problem. If you have never used git before the 4 command you will need is
+git clone
+git add
+git commit
+git push
+
+How exactly to use them can be easily found online
+
 Problem Description:
 
 For this test you will be programming a version of the RANSAC algorithm. RANSAC stands for random sample consenus and is an algorithm used to fit a model over data with outliers and inliers. 
