@@ -22,8 +22,7 @@ A better explanation can be found at https://en.wikipedia.org/wiki/Random_sample
 Typically at the end you can find which points are considered inliers using the Best_model. A final pass using all the inliers found is then done to get the best solution possible(Typically done via Least Squares)
 
 
-For this problem you are only required to find the best model of a line defined by the equation y=mx+c. So your ransac algorithm should spit out the the m and c parts of your line equation. The last step improvement via least squares
-is not needed.
+For this problem you are only required to find the best model of a line defined by the equation y=mx+c. So your ransac algorithm should spit out the the m and c parts of your line equation. The last step improvement via least squares is not needed.
 
 HINTS:
 - 2 points define a line
