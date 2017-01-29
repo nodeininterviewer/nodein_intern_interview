@@ -4,6 +4,8 @@ To get started you need to be on a Linux system preferably Ubuntu. The code requ
 
 sudo apt-get install python-numpy python-matplotlib
 
+Running the python program will show you a plot of the data, and also plots a line for your solution.
+
 Problem Description:
 
 For this test you will be programming a version of the RANSAC algorithm. RANSAC stands for random sample consenus and is an algorithm used to fit a model over data with outliers and inliers. 
@@ -29,9 +31,10 @@ HINTS:
 - 2 points define a line
 - Once you have a calculated line model the error between the line and a point can be calculated using the distance between a line and a point. (https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line)
 - Recommended error metrics are to either maximise the number of inliers(points below a threshold) or to minimise the sum of all distances between a line and the points
+- Pick a low number first for your threshold, and try to get the code working with that. The actual threshold is defined by the noise term, but using it directly causes some issues
 
 Bonus points if you have extra time:
--Modify the code that when you plot the data the inliers  and outliers are 2 different colors.
+-Modify the code so that your RANSAC solution identifies which datapoints are outliers and inliers and plot these datapoints as to seperate colors.
 
 Rules:
 You can google almost anything you need to. The only thing I ask that you do not look up is a RANSAC implementation. Pseudocode like in the wikipedia article is ok.

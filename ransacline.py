@@ -1,7 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#Generates noisy data points for a line
 #Using form y=mx+c
+#m=slope
+#c=y-intercept
+#noise=std deviation for noise threshold
 def GenerateLine(m,c,noise,num_off_points):
     distribution=np.random.normal(0,noise,num_off_points)
     x_points=np.linspace(10,200,num_off_points)
@@ -14,6 +18,7 @@ def GenerateLine(m,c,noise,num_off_points):
         ys.append(y)
     return xs,ys
 
+#Generates a line without any noise
 def GenerateLineNoNoise(m,c,num_off_points):
     x_points=np.linspace(10,200,num_off_points)
     xs=[]
@@ -24,6 +29,8 @@ def GenerateLineNoNoise(m,c,num_off_points):
         ys.append(y)
     return xs,ys
 
+
+#Generates the noisy dataset with inliers and outliers
 def CreateProblem():
     noise=20
     slope=7
@@ -41,12 +48,14 @@ def CreateProblem():
 
 #DO NOT MODIFY ANY CODE ABOVE THISE LINE
 
-
+#x = x coordinates of the datapoints
+#y = y coordinates of the datapoints
 def RANSAC(x,y):
     solution_m=0
     solution_c=0
 
     ##Your RANSAC solution here
+	##You may define additional functions as necessary
 
     return solution_m,solution_c
 
