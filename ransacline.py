@@ -56,6 +56,7 @@ def RANSAC(x,y):
 
     ##Your RANSAC solution here
 	##You may define additional functions as necessary
+	## Libraries are limited to the already added ones and the standard python ones
 
     return solution_m,solution_c
 
