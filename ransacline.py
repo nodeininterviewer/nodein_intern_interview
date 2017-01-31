@@ -69,10 +69,7 @@ def RANSAC(x,y):
         while r2 == r1: r2 = randint(0,len(x))
 
         #fit line to pts
-        if(x[r1]>x[r2]):
-            curr_m,curr_c = fitline(x[r1],y[r1],x[r2],y[r2])
-        else:
-            curr_m,curr_c = fitline(x[r2],y[r2],x[r1],y[r1])
+        curr_m,curr_c = fitline(x[r1],y[r1],x[r2],y[r2])
 
         #print(x[r1],x[r2],y[r1],y[r2])
         #for all data points not in curr_inliners
