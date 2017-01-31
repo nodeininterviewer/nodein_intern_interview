@@ -38,10 +38,10 @@ def CreateProblem():
     num_of_points=300
     x,y=GenerateLine(slope,y_intercept,noise,500)
 
-    outlier_x,outlier_y=GenerateLine(12,100,30,20)
+    outlier_x,outlier_y=GenerateLine(12,100,30,100)
     x=x+outlier_x
     y=y+outlier_y
-    outlier_x2,outlier_y2=GenerateLine(-3,-80,30,20)
+    outlier_x2,outlier_y2=GenerateLine(-3,-80,30,100)
     x=x+outlier_x2
     y=y+outlier_y2
     return x,y
